@@ -101,7 +101,7 @@ header {
 
 /*-----------container - slides--------------*/
 .container {
-    background-image: url(/assets/images/bg-site.svg);
+    background-image: url(/assets/images/bg.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
