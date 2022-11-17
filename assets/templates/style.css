@@ -101,7 +101,7 @@ header {
 
 /*-----------container - slides--------------*/
 .container {
-    background-image: url(/assets/images/bg.jpg);
+    background-image: url(/assets/images/bg-site.svg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -405,7 +405,6 @@ header {
     width: 260px;
     height: 160px;
     border-radius: 10px;
-
     cursor: pointer;
 }
 
@@ -587,17 +586,13 @@ input[type=submit] {
 
 
 /*-------------------footer---------------*/
-footer {
+.footer {
     background-color: rgb(6, 6, 18);
     display: flex;
     flex-direction: column;
     align-items: center;
     height: 150px;
     padding-top: 20px;
-}
-
-footer .logo {
-    margin-bottom: 10px;
 }
 
 .menu-footer ul,
@@ -628,6 +623,7 @@ a {
 footer .copy {
     font-size: 12px;
     color: rgb(157, 157, 157);
+    margin-bottom: 10px;
 }
 
 
@@ -665,6 +661,14 @@ footer .copy {
         flex: 1;
         display: flex;
         justify-content: flex-end;
+    }
+
+    .container {
+        height: calc(100vh - 120px);
+    }
+
+    .slides {
+        height: calc(100vh - 120px);
     }
 
     .slides {
@@ -775,25 +779,49 @@ footer .copy {
         width: 40%;
     }
 
-    .projects {
-        display: flex;
-        height: auto;
-    }
 
-    .section-projetox {
-        width: 100%;
 
+    .section-projeto {
+        width: 280px;
     }
 
     .section-projeto--area {
-        width: 100%;
-        height: 180px;
+        margin: 10px;
+        width: 260px;
+        height: 160px;
+        border-radius: 10px;
+        cursor: pointer;
     }
 
+    .section-projeto--area img {
+        width: inherit;
+        height: inherit;
+        border-radius: inherit;
+    }
 
+    .section-projeto--info {
+        position: absolute;
+        background-color: rgba(0, 0, 0, 0.7);
+        width: inherit;
+        height: inherit;
+        display: none;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        color: #fff;
+        border-radius: inherit;
+    }
 
-    .area-contatos {
-        width: 100%;
+    .section-projeto--info h5 {
+        font-size: 18px;
+    }
+
+    .section-projeto--area:hover .section-projeto--info {
+        display: flex;
+        border: 2px solid rgb(50, 237, 4);
+    }
+
+    .contact {
         height: auto;
     }
 
@@ -804,22 +832,20 @@ footer .copy {
         height: auto;
     }
 
-    footer {
-        display: flex;
-        height: auto;
-    }
-
-    footer .menu-footer {
-        display: flex;
+    .area-contatos .left-side {
         width: 100%;
-        height: auto;
-        margin: auto;
+        margin-bottom: 20px;
     }
 
-    footer .menu-footer ul {
+    .footer {
+        display: flex;
+        height: auto;
+    }
+
+    .menu-footer ul {
+        display: flex;
         flex-direction: column;
     }
-
 
 
 
