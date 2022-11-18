@@ -13,6 +13,7 @@ function btnScroll() {
         // mostrar o btn
         document.querySelector('.scrollbutton').style.display = 'block';
     }
+
 }
 window.addEventListener('scroll', btnScroll);
 
