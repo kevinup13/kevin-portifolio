@@ -429,6 +429,13 @@ header {
 
 .section-projeto--info h5 {
     font-size: 18px;
+    margin-bottom: 5px;
+}
+
+.section-projeto--info a {
+    color: rgb(50, 237, 4);
+    text-decoration: none;
+    font-size: 16px;
 }
 
 .section-projeto--area:hover .section-projeto--info {
