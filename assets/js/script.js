@@ -1,4 +1,4 @@
-function subirTela() {
+/* function subirTela() {
     window.scrollTo({
         top: 0,
         behavior: 'smooth'
@@ -6,7 +6,7 @@ function subirTela() {
 };
 
 function btnScroll() {
-    if (window.scrollY === 0 || window.scrollY > 2600) {
+    if (window.scrollY === 0 || window.scroll.length > 2600) {
         //ocutar o btn
         document.querySelector('.scrollbutton').style.display = 'none';
     } else {
@@ -17,3 +17,4 @@ function btnScroll() {
 }
 window.addEventListener('scroll', btnScroll);
 
+ */
