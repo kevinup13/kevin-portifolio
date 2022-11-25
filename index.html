@@ -12,11 +12,11 @@
 
 <body>
     <header>
-        <div class="header">
+        <div id="header" class="header">
             <div class="logo">
                 <img src="assets/images/kl-logo.png" alt="KL code" srcset="">
             </div>
-            <div class="menu">
+            <div id="menu" class="menu">
                 <nav>
                     <ul>
                         <li class="active"><a href="">Home</a></li>
@@ -26,11 +26,11 @@
                         <li><a href="#contact">Contato</a></li>
                     </ul>
                 </nav>
-            </div>
+            </div><!-- menu -->
             <div class="icon-menu">
-                <img src="assets/icons/menu.png" alt="menu">
+                <img src="assets/icons/menu.png" alt="menu" onclick="menuToggle()">
             </div>
-        </div>
+        </div><!-- header -->
     </header>
 
     <section class="container">
@@ -69,14 +69,16 @@
 
                 </div>
             </div>
-        </div>
+        </div><!-- slides -->
+
         <div class="navigation">
             <label class="nav nav-1" for="slide1"></label>
             <label class="nav" for="slide2"></label>
             <label class="nav" for="slide3"></label>
         </div>
 
-    </section>
+    </section><!-- container -->
+
     <section id="about" class="about">
         <h2>Sobre mim</h2>
         <div class="area-sobre">
@@ -101,15 +103,16 @@
                             href="assets/documents/Kevin Lopes .pdf">CV
                             Download</a>
                     </div>
+                </div><!-- text -->
 
-                </div>
-            </div>
+            </div><!-- left-side -->
+
             <div class="right-side">
                 <div class="area-img-sobre"></div>
             </div>
         </div><!-- area-sobre -->
-
     </section><!-- about -->
+
     <section id="tecnologias" class="tecnologias">
         <h2>Tecnologias</h2>
         <div class="area-tecnologias">
@@ -118,6 +121,7 @@
                     <img src="assets/images/projeto2.png" alt="">
                 </div>
             </div><!-- left-side -->
+
             <div class="right-side">
                 <div class="box-img">
                     <img src="assets/icons/html.png" alt="html 5">
@@ -137,8 +141,6 @@
                 <div class="box-img">
                     <img src="assets/icons/php.png" alt="PHP">
                 </div>
-
-
 
             </div><!-- right-side -->
         </div><!-- area-tecnologias -->
@@ -295,11 +297,12 @@
                     <input type="submit" name="acao" value="Enviar">
                 </form>
 
-            </div>
+            </div><!-- right-side -->
 
-        </div>
+        </div><!-- area-contatos -->
 
-    </section>
+    </section><!-- contact -->
+
     <div onclick="subirTela()" class="scrollbutton"><span>Início</span></div>
     <script src="assets/js/script.js"></script>
 
@@ -310,7 +313,7 @@
             </div>
             <div class="menu-footer">
                 <ul>
-                    <li class="active"><a href="">Home</a></li>
+                    <li class="active"><a href="#header">Home</a></li>
                     <li><a href="#about">Sobre mim</a></li>
                     <li><a href="#tecnologias">Tecnologias</a></li>
                     <li><a href="#projects">Projetos</a></li>

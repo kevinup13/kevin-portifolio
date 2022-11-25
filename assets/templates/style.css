@@ -638,7 +638,6 @@ footer .copy {
 
 @media (max-width: 430px) {
 
-
     header {
         height: 60px;
     }
@@ -658,17 +657,48 @@ footer .copy {
         height: 35px;
     }
 
+    /* inicio: menu-area */
     .menu {
         display: none;
-        justify-content: flex-end;
-
     }
+
+    .menu-opened {
+        display: flex;
+        opacity: 1;
+        position: absolute;
+        top: 60px;
+        right: 0;
+        justify-content: left;
+        flex-direction: column;
+        width: 200px;
+        height: 100vh;
+        transition: all ease .3s;
+        z-index: 10;
+        background-color: rgb(4, 1, 39);
+    }
+
+    .menu-opened ul {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .menu-opened li a {
+        margin-left: 5px;
+        margin-right: 5px;
+        transition: .3s;
+        height: 60px;
+        border: 5px solid rgb(4, 1, 39);
+    }
+
 
     .icon-menu {
         flex: 1;
         display: flex;
         justify-content: flex-end;
     }
+
+
 
     .container {
         height: calc(100vh - 120px);
