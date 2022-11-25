@@ -9,3 +9,5 @@ function menuToggle() {
     }
     /* document.getElementById('menu').classList.add('menu-opened') */
 }
+
+$('')
