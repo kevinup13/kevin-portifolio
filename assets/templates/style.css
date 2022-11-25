@@ -669,11 +669,11 @@ footer .copy {
         right: 0;
         justify-content: left;
         flex-direction: column;
-        width: 200px;
-        height: 100vh;
+        width: 100%;
+        height: auto;
         transition: all ease .3s;
         z-index: 10;
-        background-color: rgb(4, 1, 39);
+        background-color: rgb(7, 4, 45);
     }
 
     .menu-opened ul {
@@ -687,7 +687,7 @@ footer .copy {
         margin-right: 5px;
         transition: .3s;
         height: 60px;
-        border: 5px solid rgb(4, 1, 39);
+        border: 5px solid rgb(7, 4, 45);
     }
 
 
